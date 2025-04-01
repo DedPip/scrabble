@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
+int count_score(string word);
+
 int main(void)
 {
     int num_of_1_points = 10;
@@ -12,6 +14,20 @@ int main(void)
     int num_of_8_points = 2;
     int num_of_10_points = 2;
 
+    string word = "zzzzz";
+        
+    int result = count_score(word);
+
+    printf("%i\n", result);
+
+    
+
+
+
+}
+
+int count_score(string word)
+{
     string point1s = "aeilnorstu";
     string point2s = "dg";
     string point3s = "bcmp";
@@ -19,10 +35,9 @@ int main(void)
     string point5s = "k";
     string point8s = "jx";
     string point10s = "qz";
-        
-    string word = "abcdefghijklmnopqrst";
+
     int score = 0;
-    
+
     for (int i = 0, word_length = strlen(word); i < word_length; i++)
     {
 
@@ -112,7 +127,5 @@ int main(void)
 
     }
 
-    printf("%i\n", score);
-
-
+    return score;
 }
