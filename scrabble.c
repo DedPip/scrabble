@@ -10,6 +10,16 @@ int main(void)
     int num_of_5_points = 1;
     int num_of_8_points = 2;
     int num_of_10_points = 2;
+
+    string point1s = "aeilnorstu";
+    string point2s = "dg";
+    string point3s = "bcmp";
+    string point4s = "fhvwy";
+    string point5s = "k";
+    string point8s = "jx";
+    string ponnt10s = "qz";
+        
+    // }
     // characters with score 1: A, E, I, L, N, O, R, S, T, U,
 
     // characters with score 2: D, G, 
