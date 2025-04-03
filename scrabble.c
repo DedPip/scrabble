@@ -7,21 +7,18 @@ int count_score(string word);
 int main(void)
 
 {
-    string raw_input = "zzzz!";
-
-    int score1 = count_score(raw_input);
-    printf("%i\n", score1);
+    
 }
 
 int count_score(string word)
 {
-    string point1s = "aeilnorstu";
-    string point2s = "dg";
-    string point3s = "bcmp";
-    string point4s = "fhvwy";
-    string point5s = "k";
-    string point8s = "jx";
-    string point10s = "qz";
+    string point1s = "aAeEiIlLnNoOrRsStTuU";
+    string point2s = "dDgG";
+    string point3s = "bBcCmMpP";
+    string point4s = "fFhHvVwWyY";
+    string point5s = "kK";
+    string point8s = "jJxX";
+    string point10s = "qQzZ";
 
     int score = 0;
 
