@@ -3,58 +3,15 @@
 #include <stdio.h>
 #include <string.h>
 
-int count_desirable_chars(string word);
 int count_score(string word);
-
 int main(void)
+
 {
-    int num_of_1_points = 10;
-    int num_of_2_points = 2;
-    int num_of_3_points = 4;
-    int num_of_4_points = 5;
-    int num_of_5_points = 1;
-    int num_of_8_points = 2;
-    int num_of_10_points = 2;
+    string raw_input = "zzzz!";
 
-    string word = "zzzalfjalkfjal?slfjsolfjslfz";
-    
-    // char newWord[n + 1];
-    
-    // strncpy(newWord, word, n);
-    // newWord[n] = '\0';
-    // printf("%s\n", newWord);
-    
-    printf("%s\n", word);
-
-    // printf("%i\n", (int) word[1]);
-    // char english_only[strlen(word)];
-    // int ascii_A = 65, ascii_Z = 90, ascii_a = 97, ascii_z = 122, num_of_desirable_chars = strlen(word);
-    // for (int i = 0, word_length = strlen(word); i < word_length; i++)
-    // {
-    //     if (((int) word[i] < ascii_A || (int) word[i] > ascii_Z) && ((int) word[i] < ascii_a || (int) word[i] > ascii_z))
-    //     {
-    //         num_of_desirable_chars = i;
-    //         break;
-    //     }
-    // }
-    // printf("%i\n", num_of_desirable_chars);
-    printf("%i\n", count_desirable_chars(word));
-
+    int score1 = count_score(raw_input);
+    printf("%i\n", score1);
 }
-int count_desirable_chars(string word)
-{
-    int ascii_A = 65, ascii_Z = 90, ascii_a = 97, ascii_z = 122, num_of_desirable_chars = strlen(word);
-    for (int i = 0, word_length = strlen(word); i < word_length; i++)
-    {
-        if (((int) word[i] < ascii_A || (int) word[i] > ascii_Z) && ((int) word[i] < ascii_a || (int) word[i] > ascii_z))
-        {
-            num_of_desirable_chars = i;
-            break;
-        }
-    }
-    return num_of_desirable_chars;
-}
-
 
 int count_score(string word)
 {
