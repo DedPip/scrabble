@@ -5,9 +5,25 @@
 
 int count_score(string word);
 int main(void)
-
 {
+    string player1_word = get_string("Player 1: ");
+    string player2_word = get_string("Player 2: ");
+
+    int player1_score = count_score(player1_word);
+    int player2_score = count_score(player2_word);
     
+    if (player1_score > player2_score)
+    {
+        printf("Player 1 wins!\n");
+    }
+    else if (player1_score < player2_score)
+    {
+        printf("Player 2 wins!\n");
+    }
+    else
+    {
+        printf("Tie!\n");
+    }
 }
 
 int count_score(string word)
